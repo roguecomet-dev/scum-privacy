@@ -9,34 +9,53 @@
         h1 { font-size: 24px; }
         h2 { font-size: 18px; margin-top: 24px; }
         p { margin: 12px 0; }
+        ul { margin: 12px 0; padding-left: 22px; }
+        li { margin: 6px 0; }
         .date { color: #666; font-size: 14px; }
     </style>
 </head>
 <body>
     <h1>Scum - Privacy Policy</h1>
-    <p class="date">Last updated: April 15, 2026</p>
+    <p class="date">Last updated: July 13, 2026</p>
 
     <h2>Overview</h2>
-    <p>Scum is a card game that uses Apple's GameKit and CloudKit services. We respect your privacy and collect minimal data necessary for the game to function.</p>
+    <p>Scum is a card game published by Salmon's LLC. It uses Apple's Game Center (GameKit) and iCloud (CloudKit) services to provide online multiplayer. We collect only the limited data needed to make multiplayer work, we do not use advertising or third-party tracking, and we never sell or share your data. This policy explains exactly what is collected, why, where it is stored, and how you can have it deleted.</p>
 
     <h2>Data We Collect</h2>
-    <p><strong>Game Center Data:</strong> When you sign in with Game Center, Apple provides your Game Center display name and player ID to enable multiplayer features. This is handled entirely by Apple's GameKit framework.</p>
-    <p><strong>CloudKit Data:</strong> When you create or join a public game room, your Game Center display name and a room code are stored temporarily in Apple's CloudKit service to allow other players to find and join your game. This data is automatically deleted when the room expires.</p>
-    <p><strong>Game Statistics:</strong> Your game scores, win/loss records, and player profile are stored locally on your device using UserDefaults. This data never leaves your device.</p>
+    <p>When you are signed in to Game Center and use online features, the app stores the following in Apple's CloudKit service (in a database associated with the app that other players and we can read, so that multiplayer discovery works):</p>
+    <ul>
+        <li><strong>Online presence:</strong> your Game Center <strong>player ID</strong>, your Game Center <strong>display name</strong>, and an <strong>online/idle status</strong>. This is updated periodically while you are signed in so that friends can see when you are available to play.</li>
+        <li><strong>Game rooms:</strong> when you create or host a public game room, your Game Center display name, your player ID, a room code, the room's game settings, and the current player count are stored so that other players can find and join your room.</li>
+    </ul>
+    <p>Game Center itself also provides your display name and player ID to enable multiplayer; that exchange is handled by Apple's GameKit framework and governed by Apple's own privacy policy.</p>
+    <p><strong>On-device data:</strong> your game scores, win/loss records, and player profile are stored locally on your device (in app storage) and are <strong>not</strong> transmitted to us or to Apple's CloudKit service.</p>
+
+    <h2>How We Use This Data</h2>
+    <p>The data above is used <strong>only</strong> to operate the game's online features — showing which players are online, and letting players find and join each other's game rooms. It is not used for advertising, marketing, profiling, or analytics.</p>
 
     <h2>Data We Do Not Collect</h2>
-    <p>We do not collect personal information such as your real name, email address, phone number, or location. We do not use any third-party analytics, advertising, or tracking services. We do not sell or share any data with third parties.</p>
+    <p>We do not collect your real name, email address, phone number, precise or coarse location, contacts, photos, or payment information. We do not use any third-party analytics, advertising, or tracking services, and we do not track you across other apps or websites. We do not sell or share any data with third parties.</p>
 
-    <h2>Third-Party Services</h2>
-    <p>The app uses Apple Game Center and Apple CloudKit. These services are governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+    <h2>Where Your Data Is Stored</h2>
+    <p>Online presence and room data are stored on Apple's iCloud/CloudKit servers, which may be located in the United States or other countries outside your country of residence (including outside Canada and the Province of Quebec). By using the online features you understand that this information may be processed on Apple's servers in those locations. Apple's handling of this data is governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+
+    <h2>Data Retention and How to Delete Your Data</h2>
+    <p><strong>Game rooms</strong> are removed when the room is closed or expires. <strong>On-device data</strong> (scores, profile) is removed when you delete the app from your device. <strong>Your online presence record</strong> is removed when you sign out of Game Center; while you are signed in but not actively using the app, your status becomes stale and you appear offline to other players.</p>
+    <p>You can request deletion of any online presence or room data associated with your Game Center account at any time by contacting us at <a href="mailto:privacy@roguecomet.com">privacy@roguecomet.com</a>. You can also stop all online data collection by signing out of Game Center or by not using the app's online features.</p>
+
+    <h2>Your Privacy Rights</h2>
+    <p>Depending on where you live, you may have rights to access, correct, or delete the personal information we hold about you, and to withdraw consent for its collection. Residents of the United States (including California) and Canada (including Quebec) may exercise these rights by contacting us at <a href="mailto:privacy@roguecomet.com">privacy@roguecomet.com</a>. We do not sell or share your personal information, and we do not use it for targeted advertising.</p>
 
     <h2>Children's Privacy</h2>
-    <p>Scum is suitable for all ages. We do not knowingly collect personal information from children. All multiplayer communication is limited to predefined emoji reactions.</p>
+    <p>Scum is intended for a general audience and is not directed at children under 13. We do not knowingly collect personal information from children under 13. In-game communication between players is limited to a fixed set of predefined emoji reactions — players cannot send free-form messages. If you believe a child has provided personal information, contact us at <a href="mailto:privacy@roguecomet.com">privacy@roguecomet.com</a> and we will delete it.</p>
 
-    <h2>Changes</h2>
-    <p>We may update this policy from time to time. Changes will be posted on this page.</p>
+    <h2>Third-Party Services</h2>
+    <p>The app relies on Apple Game Center and Apple CloudKit to provide online play. These services are operated by Apple and governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. We do not integrate any other third-party services.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this policy from time to time. Material changes will be posted on this page with an updated "Last updated" date.</p>
 
     <h2>Contact</h2>
-    <p>If you have questions about this privacy policy, contact us at privacy@roguecomet.com.</p>
+    <p>If you have questions about this privacy policy or wish to exercise your privacy rights, contact us at <a href="mailto:privacy@roguecomet.com">privacy@roguecomet.com</a>.</p>
 </body>
 </html>
